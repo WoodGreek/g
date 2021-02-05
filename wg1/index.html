@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>WoodGreek</title>
+  <link rel="icon" href="images/wood.jpg" type="image/icon type">
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="https://www.woodgreek.com">Wood💕<span class="logo_colour">Greek</span></a></h1>
+          <h2>LET THE WOOD SPEAK FOR YOUR ATTITUDE</h2>         
+        </div>        
+      </div>
+      
+      <div id="menubar">      
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <!--<div id="banner"></div><br><br><br>-->
+      <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()" style="background-color: black; margin-left: 100px;">
+        <a href="#" class="latest-news">
+            <p class="time" style="color: white;">Yoo !! We are back with valentine products.</p>
+            <p class="time" style="color: white;">Please do vist our website @woodgreek</p>
+        </a>
+      </marquee>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/love.jpg" style="width:100%">
+  <div class="text">Love</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/val.jpg" style="width:100%">
+  <div class="text">Care</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/valentines-day.png" style="width:100%">
+  <div class="text">Trust</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+      <!--<div id="sidebar_container"><br><br><br>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item"><br>        
+            <h4 style="font-weight: bolder; color: rgb(65, 10, 48); margin-left: 10px;">Stay update</h4>
+            <h3>Wood to❤Heart<br><br> jan 2021 </h3>
+              
+              <a href="blog.html">Click Here</a>
+            </p>-->
+                <!--<h3>Search</h3>
+                  <form method="post" action="#" id="search_form" style="height: 100px;">
+                    <p>
+                      <input class="search" type="text" name="search_field" placeholder="Enter keywords" />
+                      <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
+                        alt="Search" title="Search" />
+                    </p>
+                  </form>-->
+                <!--</div>
+              </div>
+        </div><br><br><br>-->
+        
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1><strong>Welcome to WoodGreek </h1></strong>
+        <p>At Wood Greek we take the pleasure in enriching your life with elegance style and quality.
+          From your well spent moments in your living space to the Gifts to your precious, Wood Greek have got you
+          covered.</p><br>
+      
+        <p>Here you can find products such as Gift Items, Collages, Picture Stands, Designer Handbags and products for
+          you and your home as well.
+          So feel free to explore the world of beautiful products to pick the range of the products that suits you best and
+          let Wood Greek do the rest .</p>
+        <p>
+          Our utmost priority is towards the complete satisfaction of our customers. 
+          We believe in the value of understanding the needs of our customers and going an extra mile to meet them. 
+          We are always available to come up with the best quality products for you. 
+        </p>
+        <img src="images/wood.jpg" style="border-radius: 50%;margin-top: 100px;margin-left: 200px; height:500px; width: 500px;"  alt="">
+      </div>      
+    </div>
+    <div style="margin-top: 150px;"></div>    
+    
+    <div id="content_footer"></div>
+    <div id="footer">
+      <a href="https://www.facebook.com/woodgreek" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/woodgreek/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/woodgreek/" class="fa fa-linkedin"></a>
+      <p><!--<a href="index.html">Home</a> | <a href="About Us.html">About Us</a> --> <a href="https://www.woodgreek.com">Copyright &copy; Team WoodGreek </a> </p>
+                   
+    </div>    
+  </div>
+  
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+  
+</body>
+
+</html>
